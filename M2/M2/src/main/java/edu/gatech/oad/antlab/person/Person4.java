@@ -43,12 +43,12 @@ public class Person4 {
         char currentChar;
 
         for (int i = 0; i < outputString.length; i++) {
-            currentChar = outputString.charAt(i);
+            currentChar = input.charAt(i);
             // "if current char is a number"
             // essentially will only modify outputString's corresponding char
             // if the current char has an ASCII value between '0's and '9's
             // i.e. it is a number.
-            if (currentChar >= 0 
+            if (currentChar >= 0
                 &&
                 currentChar <= 9) {
                 //------------------
