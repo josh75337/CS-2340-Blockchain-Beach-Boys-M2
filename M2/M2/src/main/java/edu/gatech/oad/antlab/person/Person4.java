@@ -48,9 +48,9 @@ public class Person4 {
             // essentially will only modify outputString's corresponding char
             // if the current char has an ASCII value between '0's and '9's
             // i.e. it is a number.
-            if (currentChar >= 0
+            if (currentChar >= '0'
                 &&
-                currentChar <= 9) {
+                currentChar <= '9') {
                 //------------------
                 currentChar -= '0'; // sub. ASCII value of '0' to get raw number
                 currentChar++;      // increment the value of the number
@@ -58,9 +58,8 @@ public class Person4 {
                 //                         if we went over
                 currentChar += '0'; // add back ASCII value of '0' to get char
             } // end if
-            outputString += currentChar;
+            outputString += currentChar; // append currentChar to output string
         } // end for loop
-        outputString += currentChar;
         return outputString;
     } // end calc
 
