@@ -48,9 +48,9 @@ public class Person4 {
             // essentially will only modify outputString's corresponding char
             // if the current char has an ASCII value between '0's and '9's
             // i.e. it is a number.
-            if (currentChar >= 0
-                    &&
-                    currentChar <= 9) {
+            if (currentChar >= 0 
+                &&
+                currentChar <= 9) {
                 //------------------
                 currentChar -= '0'; // sub. ASCII value of '0' to get raw number
                 currentChar++;      // increment the value of the number
