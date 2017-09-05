@@ -44,49 +44,56 @@ public class Person4 {
 
         for (int i = 0; i < outputString.length; i++) {
             currentChar = input.charAt(i);
-            // "if current char is a number"
-            // essentially will only modify outputString's corresponding char
-            // if the current char has an ASCII value between '0's and '9's
-            // i.e. it is a number.
-            if (currentChar >= '0'
-                &&
-                currentChar <= '9') {
-                //------------------
-                currentChar -= '0'; // sub. ASCII value of '0' to get raw number
-                currentChar++;      // increment the value of the number
-                currentChar %= 10;  // ensure we wrap around to a valid number
-                //                         if we went over
-                currentChar += '0'; // add back ASCII value of '0' to get char
-            } // end if
-
-            // "if current char is a upper case letter"
-            if (currentChar >= 'A'
-                    &&
-                    currentChar <= 'Z') {
-                //------------------
-                currentChar -= 'A'; // sub. ASCII value of 'A' to get raw number
-                currentChar++;      // increment the value of the number
-                currentChar %= 26;  // ensure we wrap around to a valid letter
-                //                         if we went over
-                currentChar += 'A'; // add back ASCII value of 'A' to get char
-            } // end if
-
-            // "if current char is a lower case letter"
-            if (currentChar >= 'a'
-                    &&
-                    currentChar <= 'z') {
-                //------------------
-                currentChar -= 'a'; // sub. ASCII value of 'a' to get raw number
-                currentChar++;      // increment the value of the number
-                currentChar %= 26;  // ensure we wrap around to a valid letter
-                //                         if we went over
-                currentChar += 'a'; // add back ASCII value of 'a' to get char
-            } // end if
-
+            currentChar = incrementAlphaNumeric(currentChar); // Increment a char a-z, A-Z, or 0-9
             outputString += currentChar; // append currentChar to output string
         } // end for loop
         return outputString;
     } // end calc
+
+    private char incrementAlphaNumeric(char inputChar) {
+        char outputChar = inputChar;
+        // "if current char is a number"
+        // essentially will only modify outputString's corresponding char
+        // if the current char has an ASCII value between '0's and '9's
+        // i.e. it is a number.
+        if (outputChar >= '0'
+                &&
+                outputChar <= '9') {
+            //------------------
+            outputChar -= '0'; // sub. ASCII value of '0' to get raw number
+            outputChar++;      // increment the value of the number
+            outputChar %= 10;  // ensure we wrap around to a valid number
+            //                         if we went over
+            outputChar += '0'; // add back ASCII value of '0' to get char
+        } // end if
+
+        // "if current char is a upper case letter"
+        if (outputChar >= 'A'
+                &&
+                outputChar <= 'Z') {
+            //------------------
+            outputChar -= 'A'; // sub. ASCII value of 'A' to get raw number
+            outputChar++;      // increment the value of the number
+            outputChar %= 26;  // ensure we wrap around to a valid letter
+            //                         if we went over
+            outputChar += 'A'; // add back ASCII value of 'A' to get char
+        } // end if
+
+        // "if current char is a lower case letter"
+        if (outputChar >= 'a'
+                &&
+                outputChar <= 'z') {
+            //------------------
+            outputChar -= 'a'; // sub. ASCII value of 'a' to get raw number
+            outputChar++;      // increment the value of the number
+            outputChar %= 26;  // ensure we wrap around to a valid letter
+            //                         if we went over
+            outputChar += 'a'; // add back ASCII value of 'a' to get char
+        } // end if
+
+        return outputChar;
+
+    } // end incrementAlphaNumeric
 
 
     /**
