@@ -44,7 +44,7 @@ public class Person4 {
 
         for (int i = 0; i < outputString.length; i++) {
             currentChar = input.charAt(i);
-            currentChar = incrementAlphaNumeric(currentChar); // Increment a char a-z, A-Z, or 0-9
+            currentChar = incrementAlphaNumeric(currentChar); // Increment char if a-z, A-Z, or 0-9
             outputString += currentChar; // append currentChar to output string
         } // end for loop
         return outputString;
