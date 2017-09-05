@@ -58,6 +58,31 @@ public class Person4 {
                 //                         if we went over
                 currentChar += '0'; // add back ASCII value of '0' to get char
             } // end if
+
+            // "if current char is a upper case letter"
+            if (currentChar >= 'A'
+                    &&
+                    currentChar <= 'Z') {
+                //------------------
+                currentChar -= 'A'; // sub. ASCII value of 'A' to get raw number
+                currentChar++;      // increment the value of the number
+                currentChar %= 26;  // ensure we wrap around to a valid letter
+                //                         if we went over
+                currentChar += 'A'; // add back ASCII value of 'A' to get char
+            } // end if
+
+            // "if current char is a lower case letter"
+            if (currentChar >= 'a'
+                    &&
+                    currentChar <= 'z') {
+                //------------------
+                currentChar -= 'a'; // sub. ASCII value of 'a' to get raw number
+                currentChar++;      // increment the value of the number
+                currentChar %= 26;  // ensure we wrap around to a valid letter
+                //                         if we went over
+                currentChar += 'a'; // add back ASCII value of 'a' to get char
+            } // end if
+
             outputString += currentChar; // append currentChar to output string
         } // end for loop
         return outputString;
