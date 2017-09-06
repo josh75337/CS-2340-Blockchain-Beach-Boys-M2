@@ -30,7 +30,17 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
+        if (input != null) {
+            int length = input.length();
+            char[] chars = input.toCharArray();
+            char[] finalArr = new char[length];
+            for (int i = 0; i < length; i++) {
+                finalArr[i] = chars[(i + 2) % length];
+            }
+            return String.valueOf(finalArr);
+        } else {
+            return null;
+        }
 	  return null;
 	}
 	
