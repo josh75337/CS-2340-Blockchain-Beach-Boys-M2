@@ -31,7 +31,11 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
+        String old = "String";
+        char first = old.charAt(old.length()-1);
+        char second = old.charAt(old.length() - 2)
+        String newString = first+second+old.substring(0,old.length()-1);
+        return newString;
 	}
 	
 	/**
