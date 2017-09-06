@@ -4,9 +4,10 @@
     <list default="true" id="62001530-243f-49d2-9463-d913036341eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/M2/M2/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/M2/M2/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/M2/M2/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/M2/M2/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/M2/M2/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/M2/M2/.gradle/4.1/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/M2/M2/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/M2/M2/.gradle/4.1/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/M2/M2/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/M2/M2/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/M2/M2/build.gradle" afterPath="$PROJECT_DIR$/M2/M2/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/M2/M2/src/main/java/edu/gatech/oad/antlab/person/Person5.java" afterPath="$PROJECT_DIR$/M2/M2/src/main/java/edu/gatech/oad/antlab/person/Person5.java" />
     </list>
     <ignored path="CS2340M2Extraction.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -267,7 +268,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
