@@ -33,7 +33,7 @@ public class Person5 {
 	  //Person 5 put your implementation here
         String old = "String";
         char first = old.charAt(old.length()-1);
-        char second = old.charAt(old.length() - 2)
+        char second = old.charAt(old.length() - 2);
         String newString = first+second+old.substring(0,old.length()-1);
         return newString;
 	}
