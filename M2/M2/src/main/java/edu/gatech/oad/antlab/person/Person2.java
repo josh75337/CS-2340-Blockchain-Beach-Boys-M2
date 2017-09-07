@@ -33,14 +33,14 @@ public class Person2 {
 	private String calc(String input) {
 		//Person 2 put your implementation here
 		Random rand = new Random();
-		char[] randArr = new char[input.length()];
+		String[] randArr = new String[input.length()];
 		String randStr = "";
 		for (int i = 0; i < input.length(); i++) {
 			int index = rand.nextInt(input.length());
-			while (randArr[index] != null) {
+			while (randArr[index] != "") {
 				index = (index + 1) % input.length();
 			}
-			randArr[index] = input.charAt(i);
+			randArr[index] = Character.toString(input.charAt(i));
 		}
 		for (int i = 0; i < input.length(); i++) {
 			randStr += randArr[i];
