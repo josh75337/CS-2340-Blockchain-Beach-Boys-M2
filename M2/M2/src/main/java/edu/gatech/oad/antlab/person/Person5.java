@@ -31,11 +31,11 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-        String old = "String";
-        char first = old.charAt(old.length()-1);
-        char second = old.charAt(old.length() - 2);
-        String newString = first+second+old.substring(0,old.length()-1);
-        return newString;
+		String old = input;
+		String first = old.substring(old.length()-1);
+		String second = old.substring(old.length() - 2, old.length() - 1);
+		String newString = second + first + old.substring(0, old.length() - 2);
+		return newString;
 	}
 	
 	/**
