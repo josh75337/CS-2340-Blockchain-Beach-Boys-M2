@@ -38,7 +38,7 @@ public class Person2 {
 		for (int i = 0; i < input.length(); i++) {
 			int index = rand.nextInt(6);
 			while (randArr[index] != null) {
-				index++;
+				index = (index + 1) % 6;
 			}
 			randArr[index] = input.charAt(i);
 		}
@@ -52,7 +52,7 @@ public class Person2 {
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
-	 * @return the string representing the 
+	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
