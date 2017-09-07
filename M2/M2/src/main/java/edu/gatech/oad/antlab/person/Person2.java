@@ -37,7 +37,7 @@ public class Person2 {
 		String randStr = "";
 		for (int i = 0; i < input.length(); i++) {
 			int index = rand.nextInt(input.length());
-			while (randArr[index] != "") {
+			while (randArr[index] != null) {
 				index = (index + 1) % input.length();
 			}
 			randArr[index] = Character.toString(input.charAt(i));
