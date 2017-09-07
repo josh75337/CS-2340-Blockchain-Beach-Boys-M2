@@ -1,6 +1,0 @@
-Original String: SomE DiFFerEnt CAse ChARs
-All Upper: SOME DIFFERENT CASE CHARS
-Task 2
-Original String: SomE DiFFerEnt CAse ChARs
-All Upper: SOME DIFFERENT CASE CHARS
-Task 2
