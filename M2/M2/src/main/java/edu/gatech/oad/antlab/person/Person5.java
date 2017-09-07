@@ -32,9 +32,9 @@ public class Person5 {
 	private String calc(String input) {
 	  //Person 5 put your implementation here
 		String old = input;
-		String first = old.substring(old.length()-1);
-		String second = old.substring(old.length() - 2, old.length() - 1);
-		String newString = second + first + old.substring(0, old.length() - 2);
+		String first = old.substring(0,1);
+		String second = old.substring(1,2);
+		String newString = old.substring(2, old.length()) + first + second;
 		return newString;
 	}
 	
