@@ -36,9 +36,9 @@ public class Person2 {
 		char[] randArr = new char[input.length()];
 		String randStr = "";
 		for (int i = 0; i < input.length(); i++) {
-			int index = rand.nextInt(6);
+			int index = rand.nextInt(input.length());
 			while (randArr[index] != null) {
-				index = (index + 1) % 6;
+				index = (index + 1) % input.length();
 			}
 			randArr[index] = input.charAt(i);
 		}
